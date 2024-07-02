@@ -1,0 +1,9 @@
+<div class="pagination">
+    <button class="btn btn-previous" (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
+    <span *ngFor="let page of [].constructor(totalPages); let i = index" 
+          (click)="changePage(i + 1)"
+          [class.active]="i + 1 === currentPage">
+      {{ i + 1 }}
+    </span>
+    <button class="btn btn-next" (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages">Next</button>
+  </div>

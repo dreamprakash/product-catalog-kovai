@@ -1,0 +1,27 @@
+@import '.../../../../styles.scss';
+
+.logo {
+    a {
+        img {
+            max-height: 48px;
+            @media  screen and  (max-width: 767px) {
+                max-height: 32px;
+            }
+        }
+    }
+}
+
+nav {
+    ul {
+        li {
+            a {
+                &:hover {
+                 @extend .text-gradient-primary
+                }
+            }
+            a.active {
+                 @extend .text-gradient-primary
+            }
+        }
+    }
+}

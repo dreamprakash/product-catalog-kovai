@@ -1,0 +1,6 @@
+  <label class="me-1">Sort Products by Price: </label>
+  <select [(ngModel)]="sortOrder" (change)="onSortChange()">
+
+    <option value="asc">Price: Low to High</option>
+    <option value="desc">Price: High to Low</option>
+  </select>

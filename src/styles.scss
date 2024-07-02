@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.75em;
+    letter-spacing: 0.02em;
+    color: #101010;
+    background: #ffffff;
+}
+
+ul {
+    padding-left: 0px;
+    margin-bottom: 0px;
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.text-gradient-primary {
+    background: transparent linear-gradient(96deg, #FF0F7B 0%, #F89B29 100%) 0% 0% no-repeat padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+    padding: 14px 16px;
+    line-height: 1.3;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.5px;
+    border-radius: 30px;
+    border: none;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    background: transparent linear-gradient(96deg, #FF0F7B 0%, #F89B29 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+}
+
+
+.add-to-cart-btn {
+    padding: 14px 16px;
+    line-height: 1.3;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 30px;
+    color: #f17921;
+    border: 1px solid #f17921;
+    &:hover {
+        -webkit-transition: all .6s ease;
+        -moz-transition: all .6s ease;
+        -o-transition: all .6s ease;
+        transition: all .6s ease;
+        background: transparent linear-gradient(96deg, #FF0F7B 0%, #F89B29 100%) 0% 0% no-repeat padding-box;
+        color: #fff;
+    }
+}

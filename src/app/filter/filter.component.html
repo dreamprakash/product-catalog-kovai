@@ -1,0 +1,8 @@
+<div class="filter d-flex align-items-center flex-wrap gap-3">
+    <div>
+      <label class="me-1">Price Range:</label>
+      <input type="number" [(ngModel)]="priceRange[0]" placeholder="Min"> - 
+      <input type="number" [(ngModel)]="priceRange[1]" placeholder="Max">
+    </div>
+    <button class="btn btn-primary" (click)="applyFilter()">Apply Filter</button>
+  </div>

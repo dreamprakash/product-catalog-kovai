@@ -1,0 +1,15 @@
+<div class="product-list">
+    <div class="card product-card" *ngFor="let product of products">
+      <img [src]="product.image" alt="{{ product.name }}" class="card-img-top product-image">
+      <div class="card-body">
+      <h2 class="card-title">{{ product.name }}</h2>
+      <p >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p>INR {{ product.price }}</p>
+      <div class="text-center">
+        <a class="btn add-to-cart-btn"> Add to cart</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+

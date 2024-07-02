@@ -1,0 +1,34 @@
+
+
+@mixin button-hover {
+    background-color: #f17921;
+    color: #fff;
+    border: 1px solid #f17921 !important;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    button {
+        color: #f17921;
+        cursor: pointer;
+        padding: 5px 10px;
+        border: 1px solid #f17921;
+        border-radius: 4px;
+        &:hover {
+          @include button-hover;
+        }
+    }
+    span {
+        @extend button;
+        width: 40px;
+        text-align: center;
+    }
+    span.active, & span:hover {
+        @include button-hover;
+    }
+    
+}

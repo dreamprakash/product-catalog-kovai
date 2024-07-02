@@ -1,0 +1,16 @@
+
+<div class="filter-wrapper d-flex align-items-center justify-content-end flex-wrap gap-3 mb-3">
+    <app-filter (filterChanged)="applyFilter($event)"></app-filter>
+    <app-sort (sortChanged)="sortProducts($event)"></app-sort>
+</div>
+
+
+<div *ngIf="noProduct">
+    <app-product-list [products]="displayedProducts"></app-product-list>
+    <app-pagination  [totalItems]="filteredProducts.length" [itemsPerPage]="itemsPerPage" (pageChanged)="updateDisplayedProducts($event)"></app-pagination>
+</div>
+
+<div class="text-center p-5" *ngIf="!noProduct">
+    <img src="../../assets/noproducts.png">
+    <h1 class="mt-4">No Products for your search</h1>
+</div>

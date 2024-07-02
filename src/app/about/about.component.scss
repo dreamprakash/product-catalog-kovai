@@ -1,0 +1,7 @@
+@import '.../../../../styles.scss';
+
+    h1 {
+        span {
+            @extend .text-gradient-primary;
+        }
+    }
